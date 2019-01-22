@@ -9,6 +9,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
 
+import javax.validation.Valid;
 import java.util.Map;
 
 /**
@@ -74,7 +75,7 @@ public class TaskController {
             MediaType.APPLICATION_XML_VALUE,
             MediaType.APPLICATION_JSON_VALUE
     })
-    public ResponseEntity<Task> updateUser(@PathVariable String taskId, @RequestBody TaskRequestModel TasksReq){
+    public ResponseEntity<Task> updateUser(@PathVariable String taskId, @Valid @RequestBody TaskRequestModel TasksReq){
         if(this.taskService.getTasks().containsKey(taskId)) {
             Task task = this.taskService.getTasks().get(taskId);
 
