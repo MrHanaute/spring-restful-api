@@ -1,4 +1,4 @@
-package com.api.model;
+package com.api.model.user;
 
 public class User {
 	private String name;

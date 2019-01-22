@@ -7,9 +7,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class Utils {
 
+	public String generateId(){
+		return UUID.randomUUID().toString();
+	}
+
 	public String generatedUserId() {
 		
-		return UUID.randomUUID().toString();
+		return this.generateId();
 
 	}
 	

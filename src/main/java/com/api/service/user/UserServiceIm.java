@@ -2,13 +2,12 @@ package com.api.service.user;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.api.model.User;
-import com.api.model.UserRequestModel;
+import com.api.model.user.User;
+import com.api.model.user.UserRequestModel;
 import com.api.shared.Utils;
 
 @Service
